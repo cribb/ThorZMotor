@@ -1,9 +1,9 @@
-function ba_movez(h, targetpos, zspeed)
-% BA_MOVEZ moves the Thorlabs z-motor to the target position.
+function tm_movez(h, targetpos, zspeed)
+% tm_MOVEZ moves the Thorlabs z-motor to the target position.
 %
 
 % Moves the Thorlabs z-motor, h, to target z-position. Get h by running
-% ba_initz.
+% tm_initz.
 %
 
 if nargin < 3 || isempty(targetpos)
@@ -16,7 +16,7 @@ end
 
 if nargin < 1 || isempty(h)
     fprintf('Grabbing new handle to z-motor...');    
-    h = ba_initz;
+    h = tm_initz;
     fprintf('done. \n');
 end    
 

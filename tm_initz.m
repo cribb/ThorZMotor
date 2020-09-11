@@ -1,5 +1,5 @@
-function hnd = ba_initz(scopecodename, visibleUI_TF)
-% BA_INITZ initializes the handle to the Thorlabs z-motor
+function hnd = tm_initz(scopecodename, visibleUI_TF)
+% TM_INITZ initializes the handle to the Thorlabs z-motor
 % 
 
     if nargin < 1 || isempty(scopecodename)
